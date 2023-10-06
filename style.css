@@ -3,6 +3,10 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    
+    background-image: url(./back6.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 * {
@@ -12,11 +16,11 @@ html {
     
 }
 
-
+/*-------------------------------------------------header start--------------------------------------------------------------------*/
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color:#1e262c22;
     width: 100%;
     align-items: center;
    
@@ -24,7 +28,7 @@ nav {
 
 #name {
     font-size: 3.5rem;
-    color: white;
+    color: #343d68;
     margin-top: 0.2rem;
     animation-name: myname;
     animation-duration: 5s;
@@ -39,16 +43,16 @@ nav {
     }
 
     30% {
-        color: crimson;
+        color: #343d68;
     }
 
     50% {
         transform: rotatey(90deg);
-        color: crimson;
+        color:#343d68;
     }
 
     70% {
-        color: crimson;
+        color: #343d68;
     }
 
     100% {
@@ -66,9 +70,9 @@ nav {
     text-decoration: none;
     font-size: 1.5rem;
     
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     margin-left: 3rem;
-    color:white;
+    color:#343d68;
 }
 
 .nav_icon {
@@ -83,25 +87,9 @@ nav {
     font-weight: bold;
 }
 
-.container1 {
-    background-image: url(img-1.png);
-    z-index: 1;
-    position: relative;
-    background-position: top center;
-    padding-bottom: 60px;
-}
+/*----------------------------------------------------------header close---------------------------------------------------------*/
 
-.container1::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: -1;
-}
+/*----------------------------------------------------------home start-----------------------------------------------------------*/
 
 .container2 {
     height: 75vh;
@@ -116,7 +104,7 @@ nav {
 
 .box {
     font-size: 3vw;
-    color: white;
+    color: crimson;
     letter-spacing: normal;
     animation: blinker 1.5s linear infinite;
 }
@@ -143,7 +131,7 @@ nav {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
  position: relative; 
- border: 5px solid rgb(222, 162, 162); 
+ border: 8px solid rgb(206, 200, 200); 
  width: 20em;
 }
 
@@ -157,7 +145,7 @@ nav {
     50% {
         transform: scale(.9);
         border-radius: 13%;
-        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.354);
+        box-shadow: 6px 6px 6px 15px rgba(0, 0, 0, 0.354);
     }
 
     100% {
@@ -165,19 +153,36 @@ nav {
     }
 
 }
+.roll{
+    animation: rolling 2s linear infinite;
+}
+@keyframes rolling {
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        color: #4e45d5;
+    }
+    50%{
+        color: #4e45d5;
+    }
 
+    100% {
+        opacity: 100%;
+    }
+}
 .para {
     font-size: 35px;
-    color: white;
+    color: #343d68;
     font-weight: 600;
 }
 
 #discription {
     margin: 1em 0 1em 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 200;
-    color: white;
+   
 }
 
 .btn {
@@ -188,9 +193,9 @@ nav {
     border-radius: 10px;
     border-color: #343d68;
     ;
-    border: 3px solid  #4e45d5;
+    border: 3px solid   #343d68;
     background-color: transparent;
-    color:white;
+    color: #4e45d5;
     transition: all;
     transition-duration: .5s;
 
@@ -204,22 +209,24 @@ nav {
 }
 
 #sticky {
-    width: 100%;
-    height: 100%;
-padding-top: 2rem;
-    text-align: center;
-    user-select: none;
-    font-size: 10em;
-    color: rgba(143, 121, 121, 0.792);
+    margin-top: 6.5em;
+    position: absolute;
+    user-select:none;
+    font-size: 5em;
+    text-decoration: wavy overline ;
+    color:rgba(231, 231, 231, 0.792);
     z-index: -1;
-    background-color: rgb(230, 218, 218);
-   
+    
 
 }
 
+/*-----------------------------------------------------home close-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------project start-------------------------------------------------------------*/
+
 .container3 {
    
-    background-color:  rgb(244, 199, 199);
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,12 +234,14 @@ padding-top: 2rem;
 }
 
 h1 {
-    padding-top: 0.5em;
+    padding-top: 2em;
     font-size: 5em;
     color: #f9004d;
     ;
     text-align: center;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.35em;
+    text-decoration: dashed underline overline;
+    letter-spacing: 5px;
 }
 
 .pro1 {
@@ -243,7 +252,7 @@ h1 {
 
 .hero {
     position: relative;
-    filter: brightness(45%);
+    filter: brightness(50%);
     height: 40vh;
     transition: all 0.8s;
     box-shadow: 0 0 20px black;
@@ -260,7 +269,7 @@ h1 {
 }
 
 #pro1_1 {
-    margin-right: 20rem;
+    margin-right: 25rem;
     margin-left: 0;
 }
 
@@ -274,5 +283,189 @@ h1 {
 }
 
 #pro1_3 {
-    margin-right: 4rem;
+    margin-right: 25rem;
 }
+
+/*-----------------------------------------------------project close------------------------------------------------------------*/
+
+/*----------------------------------------------------about start-----------------------------------------------------------------*/
+
+.container4{
+        
+    display: flex;
+    margin: 10%;
+    height: 80vh;
+    position:relative;
+    gap: 8em;
+}
+.con4_1{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+.con4_1 span{
+    font-size: 1.5em;
+    color: #3c3468e5;
+}
+.con4_1 h2{
+    font-size: 4em;
+    color: #3c3468e5;
+}
+.con4_1 p{
+    margin: 1em 0 1.3em 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.1em;
+font-weight: 200;
+}
+.con4_2{
+    width:50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-left: 3em;
+}
+.con4_2 img{
+    height: 10vh;
+    animation: iconanimate 4s linear infinite ;
+}
+ 
+@keyframes iconanimate {
+    0%{
+        
+        transform: translateY(60px);
+    }
+    50%{
+        transform: translateY(100px);
+        
+    }
+    100%{
+        transform: translateY(60px);
+    }
+}
+/*--------------------------------------------------about close---------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------contact start--------------------------------------------------------------*/
+
+.container5{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* margin-top: %; */
+    height: 75vh;
+}
+.contact1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.contact1 h2{
+    font-size: 4em;
+    color: #3c3468e5;
+}
+.contact1 span{
+    font-size: 1.1em;
+    
+}
+.contact1 div{
+    font-size: 1.3em;
+    transition: all ;
+    text-decoration: none;
+    
+}
+.contact1 div:hover{
+    letter-spacing: 1px;
+    font-weight: bold;
+   
+}
+ 
+#contact-icon-box{
+    padding-top: 1em;
+    font-size: 2.5em;
+
+}
+#contact-icon-box a{
+    color:#4358696a;
+    margin-left: .4em;
+    transition: all 1s;
+}
+
+#contact-icon-box a :hover{
+    color: #4e45d5;
+    transform: scale(1.2);
+}
+.contact2{
+    display: flex;
+    flex-direction: column;
+}
+#butn{
+    margin-left: 5%;
+}
+.download{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 2.5%;
+    border-radius: 15px;
+    background-color:  #4e45d5;
+    color: aliceblue;
+    transition: all;
+    transition-duration: .5s;
+}
+.download:hover{
+    transform: scale(1.1);
+}
+.contact2{
+    margin-top: 1%;
+    gap: 2em;
+}
+.input-name , .input-msg{
+        width: 100%;
+        background-color: #262626e1;
+        color: whitesmoke;
+        border: none;
+        padding:10px ;
+        font-family:  Verdana, sans-serif;
+        border-radius: 7px;
+        font-size: 15px;
+}
+#submit{
+        
+    font-size: 1em;
+    padding: 1%;
+    border-radius: 15px;
+    background-color:  #4e45d5;
+    color: aliceblue;
+    transition: all;
+    transition-duration: .5s;
+}
+#submit:hover{
+    transform: scale(1.2);
+}
+#phone a , #email a{
+    text-decoration: none;
+    color: #262626;
+}
+
+/*-------------------------------------------------contact close------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------fotter start------------------------------------------------------------------*/
+
+
+footer{
+    text-align: center;
+    color:  #262626;
+    padding-bottom: 1%;
+    padding-top: .5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ft-ele{
+    color:  #4e45d5;
+    font-weight: 400;
+}
+
+/*-------------------------------------------------fotter close----------------------------------------------------------------*/
