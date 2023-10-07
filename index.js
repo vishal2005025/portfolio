@@ -1,6 +1,7 @@
 function clicked(){
-    window.open("http://127.0.0.1:3000/index.html")
-};
+   alert("yor are going to download")
+}
+
 
 
 
