@@ -3,11 +3,15 @@
 html {
     scroll-behavior: smooth;
     /*font-family: 'Montserrat', sans-serif;*/
-    
     background-image: url(./back6.jpg);
     background-position: center;
     background-size: cover;
+    filter: brightness(116%);
+    position: relative;
+   
+    
 }
+
 
 * {
     padding: 0%;
@@ -132,7 +136,7 @@ nav {
 
 #my_img {
     height: 28em;
-    border-radius: 5%;
+    border-radius: 20%;
     transition: all 1s;
     animation-name: myimg;
     animation-duration: 5s;
@@ -147,6 +151,7 @@ nav {
 @keyframes myimg {
 
     0% {
+      
         transform: scale(1);
     }
 
@@ -154,6 +159,7 @@ nav {
         transform: scale(.9);
         border-radius: 13%;
         box-shadow: 6px 6px 6px 15px rgba(0, 0, 0, 0.354);
+        
     }
 
     100% {
@@ -163,6 +169,7 @@ nav {
 }
 .roll{
     animation: rolling 2s linear infinite;
+    text-shadow:2px 2px rgb(198, 172, 177);
 }
 @keyframes rolling {
     0%{
@@ -224,9 +231,10 @@ font-weight: 350;
     position: absolute;
     user-select:none;
     font-size: 7em;
-    
-    color:rgba(231, 231, 231, 0.792);
-    z-index: -1;
+    text-shadow: 1px 1px rgb(197, 143, 153);
+    color:rgba(246, 228, 228, 0.792);
+    z-index: -200;
+
     
 
 }
@@ -267,7 +275,7 @@ h1 {
     height: 40vh;
     transition: all 0.8s;
     box-shadow: 0 0 20px black;
-    border-radius: 5%;
+    border-radius: 20%;
 }
 
 
