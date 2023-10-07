@@ -110,6 +110,7 @@ nav {
 }
 
 .box {
+    padding-top: 20px;
     font-size: 3vw;
     color: crimson;
     letter-spacing: normal;
@@ -820,7 +821,7 @@ footer{
     }
     
 }
-@media (min-width:400px){
+/*@media (min-width:400px){
     .container2{
         padding-top: 150px;
         
@@ -835,5 +836,5 @@ footer{
     .container5{
         padding-top: 700px;
     }
-}
+}*/
 /*-----------------------------------media query for mobile close --------------------------------------------------------------*/
