@@ -114,11 +114,13 @@ nav {
 }
 
 .box {
+    padding-left: 20%;
     padding-top: 20px;
     font-size: 3vw;
     color: crimson;
     letter-spacing: normal;
-    animation: blinker 1.5s linear infinite;
+    animation: blinker 1s linear infinite;
+    width: 80%;
 }
 @keyframes blinker{
     50%{
